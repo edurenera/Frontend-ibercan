@@ -1,0 +1,103 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+section.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url('/perro1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-section .contenedor {
+    position: relative;
+    width: 400px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(11, 11, 11, 0.6);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section .contenedor h2 {
+    font-size: 2.3rem;
+    color: black;
+    text-align: center;
+}
+
+.login-section .input-contenedor {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
+.login-section .input-contenedor label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+.login-section input:focus ~ label,
+.login-section input:valid ~ label {
+    top: -5px;
+}
+
+.login-section .input-contenedor input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: black;
+}
+
+.login-section .input-contenedor .input-icon {
+    position: absolute;
+    color: black;
+    font-size: 1.6rem;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.login-section button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background-color: black !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold !important;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem !important;
+    transition: 0.4s;
+}
+
+.login-section button:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+    border-color: rgb(86, 81, 81) !important;
+    transform: scale(1.05);
+}
+
+.login-section .btn-espacio {
+    padding-top: 30px;
+}
